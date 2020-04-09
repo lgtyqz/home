@@ -26,7 +26,7 @@ section, header {
   box-shadow: 0px 0px 5px #BBBBBB;
 }
 
-header {
+header, figure.deepfry img {
   width: 100%;
   padding-left: 0px;
   padding-right: 0px;
@@ -88,10 +88,6 @@ figure.project img {
   height: 60%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-}
-
-figure.deepfry img {
-  width: 100%;
 }
 
 figure.project h3, figure.project p {
