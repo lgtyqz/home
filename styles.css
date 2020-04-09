@@ -12,8 +12,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 section, header {
@@ -39,7 +37,7 @@ header {
   padding-bottom: 20px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   margin-top: 8px;
   margin-bottom: 8px;
   font-family: "Overpass", sans-serif;
@@ -47,7 +45,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-h1 {
+h1, div.collection {
   font-size: 48px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -61,7 +59,6 @@ p {
   margin-top: 0px;
   margin-bottom: 8px;
   font-family: "Open Sans", sans-serif;
-  text-align: center;
 }
 
 img.header-icon {
@@ -69,12 +66,6 @@ img.header-icon {
   max-height: 48px;
   margin-left: 24px;
   margin-right: 24px;
-}
-
-div.collection {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 figure.project {
