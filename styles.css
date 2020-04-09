@@ -1,19 +1,111 @@
 /*
-  *** TODO: fill in your header ***
-  INSERT YOUR NAME HERE
-  INSERT THE CURRENT DATE HERE
-  INSERT YOUR SECTION/TA NAME
+  Name: Kevin Yang
+  Date: April 6, 2020
+  Section: CSE 154 AO
 
-  WRITE A 2-3 SENTENCE FILE DESCRIPTION HERE
+  [WRITE A 2-3 SENTENCE FILE DESCRIPTION HERE]
 */
 
-/*
-  Note: This body ruleset is to get you started
-*/
 body {
-  background-color: cornflowerblue;
+  background-color: #F9F9F9;
   font-family: "Helvetica", sans-serif;
   margin-left: auto;
   margin-right: auto;
-  width: 85%;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+section, header {
+  background-color: #FFFFFF;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 92.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px #BBBBBB;
+}
+
+header {
+  width: 100%;
+  margin-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1, h2, h3 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 4px 5px #BBBBBB;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+img.header-icon {
+  display: inline;
+  max-height: 48px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+div.collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+figure.project {
+  width: 200px;
+  height: 300px;
+  background-color: #2B2D42;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 8px 8px 8px 8px;
+  box-shadow: 2px 4px 10px #777777;
+}
+
+figure.project img {
+  height: 60%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+figure.project h3 {
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
+figure.project p {
+  font-size: 11px;
+  color: #F9F9F9;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  text-align: left;
 }
