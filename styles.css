@@ -3,10 +3,11 @@
   Date: April 6, 2020
   Section: CSE 154 AO
 
-  [WRITE A 2-3 SENTENCE FILE DESCRIPTION HERE]
+  The style I use across my imaginary website in order to maintain a sense of
+  stylistical unity. Also contains my simple but epic card design.
 */
 
-body {
+body, section, header {
   background-color: #F9F9F9;
   font-family: "Helvetica", sans-serif;
   margin-left: auto;
@@ -21,18 +22,20 @@ section, header {
   padding-top: 16px;
   padding-bottom: 16px;
   width: 92.5%;
-  margin-top: 20px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 5px #BBBBBB;
 }
 
 header {
   width: 100%;
-  margin-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+section {
+  margin-top: 20px;
 }
 
 h1, h2, h3, p {
@@ -45,15 +48,22 @@ h1, h2, h3, p {
 
 h1, div.collection, p {
   font-size: 48px;
-  margin-top: 0px;
   margin-bottom: 0px;
+}
+
+h1, div.collection {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h1 {
   text-shadow: 2px 4px 5px #BBBBBB;
 }
 
 p {
+  font-weight: 400;
+  font-size: 20px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -80,10 +90,13 @@ figure.project img {
   border-top-right-radius: 25px;
 }
 
+figure.project h3, figure.project p {
+  margin-top: 2px;
+}
+
 figure.project h3 {
   font-size: 18px;
   color: #FFFFFF;
-  margin-top: 4px;
   margin-bottom: 2px;
 }
 
@@ -92,7 +105,6 @@ figure.project p {
   color: #F9F9F9;
   margin-left: 16px;
   margin-right: 16px;
-  margin-top: 0px;
   margin-bottom: 4px;
   text-align: left;
 }
