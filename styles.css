@@ -51,7 +51,7 @@ h1, div.collection, p {
   margin-bottom: 0px;
 }
 
-h1, div.collection {
+h1, div.collection, figure.deepfry {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,7 +74,7 @@ img.header-icon {
   margin-right: 24px;
 }
 
-figure.project {
+figure {
   width: 200px;
   height: 300px;
   background-color: #2B2D42;
@@ -88,6 +88,10 @@ figure.project img {
   height: 60%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+}
+
+figure.deepfry img {
+  width: 100%;
 }
 
 figure.project h3, figure.project p {
