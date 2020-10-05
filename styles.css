@@ -1,12 +1,3 @@
-/*
-  Name: Kevin Yang
-  Date: April 6, 2020
-  Section: CSE 154 AO
-
-  The style I use across my imaginary website in order to maintain a sense of
-  stylistical unity. Also contains my simple but epic card design.
-*/
-
 body, section, header {
   background-color: #F9F9F9;
   font-family: "Helvetica", sans-serif;
@@ -57,12 +48,21 @@ h1, div.collection, figure.deepfry {
   justify-content: center;
 }
 
+div.collection {
+  justify-content: start;
+  overflow-x: scroll;
+  overflow-y: visible;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 h1 {
   text-shadow: 2px 4px 5px #BBBBBB;
 }
 
 p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
 }
@@ -75,19 +75,47 @@ img.header-icon {
 }
 
 figure {
-  width: 200px;
-  height: 300px;
+  min-width: 200px;
+  height: 325px;
   background-color: #2B2D42;
-  border-radius: 25px;
+  border-radius: 15px;
   overflow: hidden;
   margin: 8px 8px 8px 8px;
   box-shadow: 2px 4px 10px #777777;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
-figure.project img {
+figure:hover {
+  transform: scale(1.1, 1.1);
+}
+
+figure.project>img {
   height: 60%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+figure.project div.image-holder {
+  position: relative;
+  height: 60%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+div.centerer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+figure.project div.image-holder div img {
+  transform: translate(-50%, -50%);
+  max-height: 100%;
 }
 
 figure.project h3, figure.project p {
@@ -98,6 +126,7 @@ figure.project h3 {
   font-size: 18px;
   color: #FFFFFF;
   margin-bottom: 2px;
+  line-height: 125%;
 }
 
 figure.project p {
