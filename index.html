@@ -11,31 +11,73 @@
   </head>
   <body>
     <header>
-      <!-- Image from: https://ya-webdesign.com/explore/open-eye-crying-laughing-emoji-png/-->
-      <h1>
-        <!-- <img src="./images/lmao.png" class="header-icon" alt="open-eye crying laughing emoji"> -->
-        L G T Y Q Z
-        <!-- <img src="./images/lmao.png" class="header-icon" alt="open-eye crying laughing emoji"> -->
-      </h1>
-      <p>
-        Computer Science grad & hobbyist game dev
-      </p>
+      <div id="titles">
+        <h1>
+          L G T Y Q Z
+        </h1>
+        <h2>
+          Cloud & Frontend Developer
+        </h2>
+      </div>
+      <div id="logoHolder">
+        <img src="./images/nut-with-laptop.png" id="logo">
+      </div>
     </header>
 
-    <section>
-      <h2>Projects I've built by myself</h2>
-      <div class="collection">
+    <section class="projects">
+      <h2 id="projects-header">Programming Projects</h2>
         <!-- Links are a quick and dirty solution.
         Quicker to implement than attaching event listeners, at least.-->
-        <figure class="project" onclick="location.href='http://54.71.38.92/';">
+        <figure class="project" onclick="location.href='https://lgtyqz.github.io/GambitGardens/';">
+          <div class="image-holder">
+            <div class="centerer">
+              <img src="./images/gambit-gardens-thumbnail-logo.png" alt="Gambit Gardens logo">
+            </div>
+          </div>
+          <h3>Gambit Gardens (2024)</h3>
+          <p>
+            A game about perfectly placing powerful plants! Currently in Beta.
+            Programmed in React Native, designed in Figma. All assets and game design made by me.
+          </p>
+        </figure>
+
+        <figure class="project" onclick="location.href='https://cse442-22w.github.io/FP-SearchAlgorithmViz/';">
+          <div class="image-holder">
+            <div class="centerer">
+              <img src="./images/middle-east.png" alt="Screenshot of Middle East Visualization">
+            </div>
+          </div>
+          <h3>Middle East Visualization (2022)</h3>
+          <p>
+            Data Visualization final project about military spending in the
+            middle east and the current relations between the different
+            countries, done in a team of 3 using d3.js.
+          </p>
+        </figure>
+
+        <figure class="project">
           <div class="image-holder">
             <div class="centerer">
               <img src="./images/stock-duels.png" alt="Stock Duels Screenshot">
             </div>
           </div>
-          <h3>Stock Duels</h3>
+          <h3>Stock Duels (2021)</h3>
           <p>
-            A multiplayer online CCG that I both designed & programmed myself, hosted on AWS Lightsail.
+            A (no longer online) multiplayer online CCG that I both designed & programmed myself, hosted on AWS Lightsail.
+          </p>
+        </figure>
+
+        <figure class="project"  onclick="location.href='https://github.com/AccessUW/AccessUW';">
+          <div class="image-holder">
+            <div class="centerer">
+              <img src="./images/access-uw.png" alt="Access UW Screens">
+            </div>
+          </div>
+          <h3>Access UW (2020)</h3>
+          <p>
+            A prototype Android app that aims to give the disabled an easy way
+            to find accessible paths through the University of Washington campus.
+            (My main roles were initial UI/UX design and the CI system implemented.)
           </p>
         </figure>
 
@@ -45,23 +87,23 @@
               <img src="./images/anti-ableism-walk.png" alt="Screenshot of Anti-Ableism Walk">
             </div>
           </div>
-          <h3>Anti-Ableism Walk</h3>
+          <h3>Anti-Ableism Walk (2021)</h3>
           <p>
-            A slideshow journey into some of my experiences with the experience of ableism and how
-            to combat it within the self.
+            A slideshow journey into some of my experiences with ableism and how
+            to combat it.
           </p>
         </figure>
+
         <figure class="project" onclick="location.href='https://lgtyqz.github.io/RPSAI-Markov';">
           <div class="image-holder">
             <div class="centerer">
               <img src="./images/rps-markov.png" alt="Screenshot of RPS Markov Game">
             </div>
           </div>
-          <h3>RPS Markov</h3>
+          <h3>RPS Markov (2020)</h3>
           <p>
             A rock-paper-scissors game that learns the player's patterns and
-            gives them key insights into their behavior. Better than human
-            players in the long run.
+            gives them key insights into their behavior using a simple Markov chain.
           </p>
         </figure>
         <figure class="project" onclick="location.href='https://lgtyqz.github.io/AestheticMagneticPoetry';">
@@ -70,7 +112,7 @@
               <img src="./images/amp.png" alt="Screenshot of Aesthetic Magnetic Poetry">
             </div>
           </div>
-          <h3>Aesthetic Magnetic Poetry</h3>
+          <h3>AestheticMagneticPoetry (2020)</h3>
           <p>
             A tool to calm down using some positive refrigerator magnets and
             self-composed relaxing music.
@@ -83,7 +125,7 @@
               <img src="./images/xindexin.png" alt="Screenshot of XINDEXIN">
             </div>
           </div>
-          <h3>XINDEXIN</h3>
+          <h3>XINDEXIN (2019)</h3>
           <p>
             A brutally difficult retro shmup about surviving waves of Chinese
             characters and mastering different weapons.
@@ -95,83 +137,33 @@
               <img src="./images/tripout.png" alt="Screenshot of TRIP.OUT">
             </div>
           </div>
-          <h3>ＴＲＩＰ．ＯＵＴ</h3>
+          <h3>ＴＲＩＰ．ＯＵＴ (2019)</h3>
           <p>
-            A bunch of cool-looking visualizations with some
-            m u s i c to set the mood.
+            A series of surreal visualizations, all made with vanilla JavaScript.
           </p>
         </figure>
-        <figure class="project" onclick="location.href='https://lgtyqz.github.io/DownWeGo';">
-          <div class="image-holder">
-            <div class="centerer">
-              <img src="./images/down-we-go.png" alt="Screenshot of Down We Go">
-            </div>
-          </div>
-          <h3>Down We Go</h3>
-          <p>
-            A minimalist (and also buggy) RPG I made in high school that
-            is very difficult yet relatively simple to pick up.
-          </p>
-        </figure>
+
         <figure class="project" onclick="location.href='https://lgtyqz.github.io/helloWorld';">
           <div class="image-holder">
             <div class="centerer">
               <img src="./images/hello-world.png" alt="Screenshot of Hello, World">
             </div>
           </div>
-          <h3>Hello, World</h3>
+          <h3>Hello, World (2018)</h3>
           <p>
-            A (vastly incomplete) and minimalist Metroidvania-like platformer.
-          </p>
-        </figure>
-      </div>
-    </section>
-
-    <section>
-      <h2>Projects I've worked with others on</h2>
-      <div class="collection">
-        <figure class="project" onclick="location.href='https://cse442-22w.github.io/FP-SearchAlgorithmViz/';">
-          <div class="image-holder">
-            <div class="centerer">
-              <img src="./images/middle-east.png" alt="Screenshot of Middle East Visualization">
-            </div>
-          </div>
-          <h3>Making Sense of the Middle East</h3>
-          <p>
-            Data Visualization final project about military spending in the
-            middle east and the current relations between the different
-            countries, done in a team of 3 using d3.js.
+            A minimalist Metroidvania-like platformer. Incomplete, so be warned!
           </p>
         </figure>
 
-        <figure class="project"  onclick="location.href='https://github.com/AccessUW/AccessUW';">
+        <figure class="project" onclick="location.href='https://lgtyqz.github.io/DownWeGo';">
           <div class="image-holder">
             <div class="centerer">
-              <img src="./images/access-uw.png" alt="Access UW Screens">
+              <img src="./images/down-we-go.png" alt="Screenshot of Down We Go">
             </div>
           </div>
-          <h3>Access UW</h3>
+          <h3>Down We Go (2017)</h3>
           <p>
-            A prototype Android app that aims to give the disabled an easy way
-            to find accessible paths through the University of Washington campus.
-            (My main roles were initial UI/UX design and the CI system implemented.)
-          </p>
-        </figure>
-
-        <figure class="project"  onclick="location.href='https://www.figma.com/proto/t1FJCltbtcydClVJl6T9lx/Prototype?page-id=0%3A1&node-id=18%3A464&viewport=412%2C195%2C0.12&scaling=scale-down&starting-point-node-id=18%3A464&show-proto-sidebar=1';">
-          <div class="image-holder">
-            <div class="centerer">
-              <img src="./images/lin-go.png" alt="Lin-GO! Screenshot">
-            </div>
-          </div>
-          <h3>Lin-GO!</h3>
-          <p>
-            Lin-GO! is an app prototype (on Figma) that aims to make learning slang easier for
-            immigrants and other international students to the US through
-            immersion—that is, by giving them a network of people to meet with
-            to practice. You can click <a href="https://www.figma.com/proto/SDWp2ZfLFPzcyTDxTT4kRE/Poster-Presentation?page-id=0%3A1&type=design&node-id=50-46&viewport=221%2C111%2C0.09&t=nGWlMJf80wwTC9rp-1&scaling=scale-down&starting-point-node-id=50%3A46&mode=design">here</a>
-            for more info! (I helped with all stages of design, from ideation to
-            sketching to scenario-building to paper prototyping to Figma design)
+            A minimalist RPG where you walls spawn where you step and you defend yourself not with weapons, but by making more walls. Made with canvas & vanilla JavaScript.
           </p>
         </figure>
 
@@ -181,12 +173,62 @@
               <img src="./images/code-fight-promo.png" alt="Code Fight Screenshot">
             </div>
           </div>
-          <h3>Code Fight</h3>
+          <h3>Code Fight (2019)</h3>
           <p>
-            A fighting game that aims to teach Python programming.
+            A fighting game that aims to teach Python programming by letting users control their character with code.
           </p>
         </figure>
       </div>
+    </section>
+    <section class="projects">
+      <h2 id="projects-header">Design Projects</h2>
+      <figure class="project"  onclick="location.href='https://www.figma.com/design/Wn2b3KisE2yH4Kw33j0Anj/SAP-TT-Designs?node-id=0-1&t=KDBrbAjVuGEazJvt-1';">
+        <div class="image-holder">
+          <div class="centerer">
+            <img src="./images/tt10-poster.png" alt="Super Auto Pets Tournament Branding">
+          </div>
+        </div>
+        <h3>SAP Tourney Branding (2024)</h3>
+        <p>
+          Branding for an unofficial Super Auto Pets team tournament.
+        </p>
+      </figure>
+      <figure class="project"  onclick="location.href='https://www.figma.com/proto/t1FJCltbtcydClVJl6T9lx/Prototype?page-id=0%3A1&node-id=18%3A464&viewport=412%2C195%2C0.12&scaling=scale-down&starting-point-node-id=18%3A464&show-proto-sidebar=1';">
+        <div class="image-holder">
+          <div class="centerer">
+            <img src="./images/lin-go.png" alt="Lin-GO! Screenshot">
+          </div>
+        </div>
+        <h3>Lin-GO! (2022)</h3>
+        <p>
+          Lin-GO! is an app prototype that aims to make learning slang easier for
+          immigrants by giving them a network of people to meet with
+          to practice. You can click <a href="https://www.figma.com/proto/SDWp2ZfLFPzcyTDxTT4kRE/Poster-Presentation?page-id=0%3A1&type=design&node-id=50-46&viewport=221%2C111%2C0.09&t=nGWlMJf80wwTC9rp-1&scaling=scale-down&starting-point-node-id=50%3A46&mode=design">here</a>
+          for more info!
+        </p>
+      </figure>
+      <figure class="project"  onclick="location.href='https://lgtyqz.github.io/the-reason-i-jump/'">
+        <div class="image-holder">
+          <div class="centerer">
+            <img src="./images/reason-i-jump.png" alt="The Reason I Jump project screenshot">
+          </div>
+        </div>
+        <h3>The Reason I Jump (2021)</h3>
+        <p>
+          Made as an art piece for EDSPE 304 after reading The Reason I Jump.
+        </p>
+      </figure>
+      <figure class="project"  onclick="location.href='https://www.figma.com/design/aEazavINAdcpFcXXOO0gGd/Card-Design-pogger?node-id=0-1&t=bxDfbf6NdQX6RFEP-1'">
+        <div class="image-holder">
+          <div class="centerer">
+            <img src="./images/stock-duels-design-files.png" alt="stock-duels-design-files">
+          </div>
+        </div>
+        <h3>Stock Duels - Design Files (2021)</h3>
+        <p>
+          The design files & UI mockups I created for my work on Stock Duels.
+        </p>
+      </figure>
     </section>
   </body>
 </html>
