@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <title>LGTYQZ's Design Portfolio</title>
+  </head>
+
+  <body>
+    <header id="primary-header">
+      <div id="header-left">
+        <div id="one-line-header">
+          <h1>Hi!</h1>
+          <h3>I'm LGTYQZ.</h3>
+        </div>
+
+        <h2>This is my design portfolio!</h2>
+        <h4>(go to my <a href="index.html">main page</a> for some of my programming projects!)</h4>
+      </div>
+      <div id="header-right">
+        <img id="header-logo-alt" src="./images/portfolio/nut-drawing.png">
+      </div>
+    </header>
+
+    <main>
+      <section class="case-study" id="gambit-gardens">
+        <header>
+          <img class="case-study-preview-image" src="./images/portfolio/gambit-gardens-previews.png">
+          <div class="case-study-header">
+            <h2 class="case-study-title">Gambit Gardens</h2>
+            <h4 class="case-study-subtitle">is a cute game about bidding strategy.</h4>
+            <h5 class="case-study-roles">ROLES: Solo UX Designer, Artist, & Developer</h5>
+            <a href="http://lgtyqz.github.io/GambitGardens" target="_blank" rel="noopener noreferrer" class="more-info-button">
+              <image src="./images/portfolio/new-page-button.png"></image>
+              VIEW WEBSITE + DOWNLOAD
+            </a>
+            <a href="#gambit-gardens-article" id="gambit-gardens-info-button" class="more-info-button" onclick="
+            document.getElementById('gambit-gardens-article').classList.toggle('hidden');">
+              <image src="./images/portfolio/plus-button-icon.png"></image>
+              VIEW CASE STUDY
+            </a>
+          </div>
+        </header>
+
+        <section class="case-study-article hidden" id="gambit-gardens-article">
+          <section class="article-section">
+            <h2 class="article-section-header">
+              <img class="header-stars" src="./images/portfolio/stars-left.png">
+              Background
+              <img class="header-stars" src="./images/portfolio/stars-right.png">
+            </h2>
+            <article>
+              <div class="figure-holder">
+                <figure>
+                  <img src="./images/portfolio/discord-event-screenshot.png" class="image-figure">
+                  <figcaption class="image-caption">The event setup, which I manually ran (in Figma)</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="./images/portfolio/tt-fanart.png" class="image-figure">
+                  <figcaption class="image-caption">Fanart I received</figcaption>
+                </figure>
+              </div>
+              <p>
+                I didn't play Monopoly until the ripe old age of 19. The game is fun with friends (even if the game does take forever), but I was introduced to rules where players auctioned for property, which was easily the most fun part of the game.
+                <br><br>
+                This inspired me to create a strategy game based around auctioning called Turf Tactics (later renamed Gambit Gardens), which I held asynchronously for around 50 members on a discord server. The participants loved it so much they wanted me to make it real! So I set out to.
+              </p>
+            </article>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-section-header">
+              <img class="header-stars" src="./images/portfolio/stars-left.png">
+              The Process
+              <img class="header-stars" src="./images/portfolio/stars-right.png">
+            </h2>
+            <article>
+              <p>
+                I envisioned this sort of game as a cutesy, casual party board game, something to play with friends on the go. As such, this was my first attempt at making something mobile-first (and on top of that, portrait orientation as it's generally most comfortable for users), which came with its own issues.
+                <br><br>
+                The 6x6 board had to include a lot of key information, such as what plants were on the board, how many points they were worth, and so on.
+                <br><br>
+                Furthermore users would have to be able to see what abilities ALL the plants in their hand and on the board had, which there's not a lot of room left for after the board is on the screen.
+              </p>
+              <div class="figure-holder">
+                <figure>
+                  <img src="./images/portfolio/hand-drawn-prototype.png" class="image-figure">
+                  <figcaption class="image-caption">Rough drafts, trying to figure out the layout.</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="./images/portfolio/old-cards-landscaper.png" class="image-figure">
+                  <figcaption class="image-caption">Previous card designs, much too large to see all at once on a small screen!</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="./images/portfolio/artstyle-finagling.png" class="image-figure">
+                  <figcaption class="image-caption">Messing with the artstyle.</figcaption>
+                </figure>
+              </div>
+            </article>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-section-header">
+              <img class="header-stars" src="./images/portfolio/stars-left.png">
+              The Results
+              <img class="header-stars" src="./images/portfolio/stars-right.png">
+            </h2>
+            <article>
+              <div class="figure-holder">
+                <figure>
+                  <iframe class="" width="315" height="700" src="https://www.youtube.com/embed/n-iu2l6AhRs?si=Nkd0dwYp8YUvPqfH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  <figcaption class="image-caption">A demo video of one of the first betas.</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="./images/portfolio/refined-design-landscape.png" class="image-figure">
+                  <figcaption class="image-caption">The new, simplified design.</figcaption>
+                </figure>
+
+                <figure>
+                  <img src="./images/portfolio/Phlox-preview.gif" class="image-figure">
+                  <figcaption class="image-caption">Plant animations!</figcaption>
+                </figure>
+              </div>
+              <p>
+                Plant cards have three pieces of key info: Their icon, how many points they are, and what ability they have. I compressed their icon & points into a small, simplified box, and had them show their ability as a banner notification-like display when tapped.
+                <br><br>
+                Alongside a myriad of other changes and changing the artstyle to have a more soft-border-like style, I was able to create a working demo for Gambit Gardens and have it tested by several dozen people via Discord.
+                <br><br>
+                This also ended up being my first foray into both a LOT of vector art & animation.
+              </p>
+            </article>
+          </section>
+
+          <section class="article-section">
+            <h2 class="article-section-header">
+              <img class="header-stars" src="./images/portfolio/stars-left.png">
+              Closing Thoughts
+              <img class="header-stars" src="./images/portfolio/stars-right.png">
+            </h2>
+            <article>
+              <p>
+                I think this game, while playable and fun, can be improved on a lot.
+                <br><br>
+                One UX problem left to solve is that players don't have a good idea of whose turn is next and whose turn it is, for example.
+                <br><br>
+                Beyond that, there are minor changes that would make the experience a whole lot better. Some animations (especially for Winter Melon, King Oyster Mushroom, and the Roses) are a little lazy and could use tweaking, and the small size of the animations prevents some finer details from showing up, which I need to adjust for. Another massive UX improvement is to actually animate out the plant abilities and their results to more clearly communicate what goes on during a turn.
+                <br><br>
+                These are some things I hope to work on before full release.
+              </p>
+              <div class="figure-holder">
+                <figure>
+                  <img src="./images/portfolio/Living Stone.gif" class="image-figure">
+                  <figcaption class="image-caption">Lithops plants in action.</figcaption>
+                </figure>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+
+      <section class="case-study" id="lin-go">
+        <header>
+          <img class="case-study-preview-image" src="./images/portfolio/lin-go-previews.png">
+          <div class="case-study-header">
+            <h2 class="case-study-title">Lin-GO!</h2>
+            <h4 class="case-study-subtitle">is an app that helps English Language learners learn slang.</h4>
+            <h5 class="case-study-roles">ROLES: Researching User Groups, Sketching, Storyboarding, Paper & Hi-Fidelity Prototyping.</h5>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/proto/t1FJCltbtcydClVJl6T9lx/Prototype?page-id=0%3A1&node-id=18%3A464&viewport=412%2C195%2C0.12&scaling=scale-down&starting-point-node-id=18%3A464&show-proto-sidebar=1" class="more-info-button">
+              <image src="./images/portfolio/play-button-icon.png"></image>
+              VIEW PROTOTYPE
+            </a>
+            <a href="./images/portfolio/Lin-Go-poster.pdf" class="more-info-button">
+              <image src="./images/portfolio/new-page-button.png"></image>
+              VIEW CASE STUDY
+            </a>
+          </div>
+        </header>
+      </section>
+
+      <section class="case-study" id="stock-duels">
+        <header>
+          <img class="case-study-preview-image" src="./images/portfolio/Stock-Duels.png">
+          <div class="case-study-header">
+            <h2 class="case-study-title">Stock Duels</h2>
+            <h4 class="case-study-subtitle">is an online PvP collectible card game that uses free stock images. Now offline, but the assets are still around!</h4>
+            <h5 class="case-study-roles">ROLES: Solo UX Designer & Developer</h5>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.figma.com/design/aEazavINAdcpFcXXOO0gGd/Card-Design-pogger?node-id=0-1&t=zbmnROtE6uc62SzA-1" class="more-info-button">
+              <image src="./images/portfolio/new-page-button.png"></image>
+              VIEW FIGMA FILES
+            </a>
+          </div>
+        </header>
+      </section>
+    </main>
+  </body>
+</html>
